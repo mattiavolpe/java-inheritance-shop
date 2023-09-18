@@ -7,6 +7,14 @@ public class Prodotto {
 	private float price;
 	private byte vat;
 	
+	public Prodotto(String code, String name, String brand, float price, byte vat) {
+		this.code = code;
+		setName(name);
+		setBrand(brand);
+		setPrice(price);
+		setVat(vat);
+	}
+	
 	public String getCode() {
 		return code;
 	}
