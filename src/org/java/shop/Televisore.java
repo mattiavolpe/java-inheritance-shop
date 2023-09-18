@@ -25,4 +25,9 @@ public class Televisore extends Prodotto {
 	public void setIsSmart(boolean isSmart) {
 		this.isSmart = isSmart;
 	}
+	
+	@Override
+	public String toString() {
+		return super.toString() + "\nProduct inches: " + getInches() + "\"\nIs smart: " + (isSmart ? "Yes" : "No");
+	}
 }

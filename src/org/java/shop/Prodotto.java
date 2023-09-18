@@ -56,4 +56,9 @@ public class Prodotto {
 		float vatValue = price * getVat() / 100;
 		return String.format("%.02f", (getPrice() + vatValue));
 	}
+	
+	@Override
+	public String toString() {
+		return "Product code: " + getCode() + "\nProduct name: " + getName() + "\nProduct brand: " + getBrand() + "\nProduct basic price: " + String.format("%.02f", getPrice()) + "€\nFull price: " + getFullPrice() + "€";
+	}
 }
