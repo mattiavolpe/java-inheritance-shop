@@ -43,11 +43,17 @@ public class Prodotto {
 		this.price = price;
 	}
 	
-	public byte vat() {
+	public byte getVat() {
 		return vat;
 	}
 	
 	public void setVat(byte vat) {
 		this.vat = vat;
+	}
+	
+	public String getFullPrice() {
+		float price = getPrice();
+		float vatValue = price * getVat() / 100;
+		return String.format("%.02f", (getPrice() + vatValue));
 	}
 }
