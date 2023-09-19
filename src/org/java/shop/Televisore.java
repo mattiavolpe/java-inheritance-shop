@@ -28,6 +28,6 @@ public class Televisore extends Prodotto {
 	
 	@Override
 	public String toString() {
-		return super.toString() + "\nProduct inches: " + getInches() + "\"\nIs smart: " + (isSmart ? "Yes" : "No");
+		return super.toString() + "\nProduct inches: " + getInches() + "\"\nSmart: " + (isSmart ? "Yes" : "No");
 	}
 }

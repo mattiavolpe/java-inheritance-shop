@@ -14,10 +14,11 @@ public class Carrello {
 		do {
 			do {
 				System.out.println(
-						"Select the type of product to insert:\n"
+						"Select the type of product to insert:\n\n"
 						+ "[1] Smartphone\n"
 						+ "[2] TV\n"
 						+ "[3] Headphone\n"
+						+ "----------\n"
 						+ "[0] EXIT"
 				);
 				
@@ -103,7 +104,7 @@ public class Carrello {
 		} while (!productType.equals("0"));
 		
 		for (int i = 0; i < products.length; i++) {
-			System.out.println("\n\n");
+			System.out.println("\n\nProduct #" + (i + 1) + "\n");
 			System.out.println(products[i]);
 		}
 		

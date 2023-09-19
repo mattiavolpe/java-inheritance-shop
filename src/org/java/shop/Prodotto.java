@@ -59,6 +59,6 @@ public class Prodotto {
 	
 	@Override
 	public String toString() {
-		return "Product code: " + getCode() + "\nProduct name: " + getName() + "\nProduct brand: " + getBrand() + "\nProduct basic price: " + String.format("%.02f", getPrice()) + "€\nFull price: " + getFullPrice() + "€";
+		return "Product code: " + getCode() + "\nProduct name: " + getName() + "\nProduct brand: " + getBrand() + "\nProduct basic price: " + String.format("%.02f", getPrice()) + "€\nVAT percentage: " + getVat() + "%\nFull price: " + getFullPrice() + "€";
 	}
 }
